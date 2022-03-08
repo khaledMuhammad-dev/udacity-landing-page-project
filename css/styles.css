@@ -70,19 +70,23 @@ section {
     text-align: right;
 }
 
+.navbar__list  {
+} 
+
 .navbar__menu li {
     display: inline-block;
 }
 
-.navbar__menu .menu__link {
+.navbar__menu .menu__link a {
     display: block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
     color: #000;
+    text-transform: capitalize;
 }
 
-.navbar__menu .menu__link:hover {
+.navbar__menu .menu__link a:hover {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
