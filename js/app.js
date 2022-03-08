@@ -5,6 +5,8 @@ const log = console.log;
 
 
 const sections = document.querySelectorAll("section[data-nav]");
+const ul = document.querySelector("#navbar__list");
+
 appendNavSections()
 document.addEventListener("scroll", handleActiveSection);
 
@@ -43,7 +45,7 @@ function appendNavSections() {
         
         
  
-        if ( top <= 0 && bottom > 0 ) {
+        if ( top <= 5 && bottom > 5 ) {
             if( !isActive ){
                 section.classList.add("active");
                 lis[i].classList.add("active");
@@ -59,3 +61,26 @@ function appendNavSections() {
         }
     })
 }
+
+
+
+ul.addEventListener("click", (e) => {
+    e.preventDefault()
+    if( !e.target.classList.contains("menu__link") ) {
+        return;
+    }
+
+    log("should work");
+    const id = e.target.textContent.toLowerCase().replace(/\s/, "");
+    
+    const section = document.querySelector(`#${ id }`);
+    const top = section.offsetTop;
+
+    window.scrollTo({
+        top,
+        left: 0,
+        behavior: 'smooth',
+    })
+
+
+})
