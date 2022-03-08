@@ -12,7 +12,6 @@ document.addEventListener("scroll", handleActiveSection);
 
 function appendNavSections() {
 
-    const ul = document.querySelector("#navbar__list");
     const tempContainer = document.createDocumentFragment();
 
     sections.forEach(
