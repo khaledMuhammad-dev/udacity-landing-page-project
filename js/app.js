@@ -1,26 +1,30 @@
 
 
 
+const log = console.log;
+appendNavSections()
 
-appendNavSections(4)
 
-
-function appendNavSections(num) {
+function appendNavSections() {
+    const sections = document.querySelectorAll("section[data-nav]");
 
     const ul = document.querySelector("#navbar__list");
     const tempContainer = document.createDocumentFragment();
 
-    for ( let i = 1; i <= num; i++ ) {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.setAttribute("href", "#");
-        a.classList.add("menu__link");
-        a.textContent = `section ${ i }`;
-        li.appendChild(a);
+    sections.forEach(
+        section => {
+            const { nav } = section.dataset;
+            const li = document.createElement("li");
+            const a = document.createElement("a");
 
-        tempContainer.appendChild(li);
-    }
+            a.setAttribute("href", "#");
+            a.classList.add("menu__link");
+            a.textContent = nav;
+            li.appendChild(a);
+    
+            tempContainer.appendChild(li);
+        }
+    );
 
     ul.appendChild(tempContainer);
-
 }
