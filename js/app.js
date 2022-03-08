@@ -35,7 +35,7 @@ function appendNavSections() {
 
 
 /**
- * TODO -> Active State
+ * TODO -> Section Active State
  * - scroll event listener
  * - select element
  * - get element top and bottom
