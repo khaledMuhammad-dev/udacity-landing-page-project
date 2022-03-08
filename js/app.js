@@ -65,14 +65,17 @@ function appendNavSections() {
 
 
 ul.addEventListener("click", (e) => {
-    e.preventDefault()
-    if( !e.target.classList.contains("menu__link") ) {
+    const { target } = e;
+    e.preventDefault();
+
+    if( !target.classList.contains("menu__link") ) {
         return;
     }
 
-    log("should work");
-    const id = e.target.textContent.toLowerCase().replace(/\s/, "");
-    
+    const id = target.textContent
+               .toLowerCase()
+               .replace(/\s/, "");
+               
     const section = document.querySelector(`#${ id }`);
     const top = section.offsetTop;
 
