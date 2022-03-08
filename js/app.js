@@ -33,16 +33,6 @@ function appendNavSections() {
 }
 
 
-/**
- * TODO -> Section Active State
- * - scroll event listener
- * - select element
- * - get element top and bottom
- * - check if (top <= 0 && bottom > 0)
- * --- If TURE -> set active for two elements ( nav - section )
- * --- remove active the other active classes
- * --- IF FALSE -> check IF HAS Active class -> toggle
- */
 
  const lis = document.querySelectorAll("li");
 
