@@ -4,14 +4,14 @@
 
 This project for learning purpose. FWD scholarship on Udacity platform
 
-### Preview
+## Preview:
 project link [landing page](https://landing-page-proj.netlify.app/)
 
 # Project's Behavior
 
 | Criteria             | Meets Specifications                                                                                    |
 | -------------------- | ------------------------------------------------------------------------------------------------------- |
-| Navigation           | Navigation Start with empty `ul` and dynamically build navigation usin.                                 |
-| Section Active State | identify which section is being viewed while scrolling through the page.                                |
-| Scroll to Anchor     | when an item is clicked scroll to the appropriate section with a smooth scrolling behavior is expected. |
+| Navigation           | Navigation Start with empty `ul` and dynamically build navigation.                                      |
+| Section Active State | Ientify which section is being viewed while scrolling through the page.                                 |
+| Scroll to Anchor     | When an item is clicked scroll to the appropriate section with a smooth scrolling behavior is expected. |
 
