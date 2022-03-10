@@ -11,7 +11,7 @@ Udacity platform<br/>
 [![Udacity logo](/assets/udacity.jpg "udacity logo")](https://www.udacity.com/)
 
 ### Preview:
-project link [landing page](https://landing-page-proj.netlify.app/)
+project link [landing page](https://landing-page-proj.netlify.app/) ✨
 
 # Project's Behavior
 
