@@ -4,10 +4,10 @@
 
 This project for learning purpose.
 
-FWD scholarship
+FWD scholarship<br/>
 [![FWD logo](https://egfwd.com/wp-content/uploads/2021/10/logo-01.png "FWD logo")](https://egfwd.com/)
 
-Udacity platform
+Udacity platform<br/>
 [![FWD logo](https://www.udacity.com/images/svgs/udacity-tt-logo.svg "FWD logo")](https://www.udacity.com/)
 
 ## Preview:
