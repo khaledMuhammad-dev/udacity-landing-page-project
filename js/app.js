@@ -87,3 +87,60 @@ ul.addEventListener("click", (e) => {
 
 
 })
+
+
+const burgerbtn = document.querySelector(".burger__menu");
+const header = document.querySelector(".page__header");
+let expand = false;
+let timeoutRef = -1;
+
+burgerbtn.addEventListener("click", toggleMenu);
+window.addEventListener("resize", reInit);
+
+document.addEventListener( "click", function({ target } ) {
+    if(burgerbtn.contains( target )){ 
+        return;
+    }
+
+    if(window.innerWidth <= 786 && expand){ 
+
+        toggleMenu()
+    }
+    
+})
+
+function openMenu() {
+    ul.setAttribute("class", "show");
+
+    const menuHeight = ul.offsetHeight;
+    header.style.height = `${ menuHeight + 52 }px`;
+}
+
+function closeMenu() {
+    header.removeAttribute("style");
+    timeoutRef = setTimeout(() => ul.removeAttribute("class"), 300)
+}
+
+function toggleMenu() {
+    expand = !expand;
+
+    if(!expand) {
+        closeMenu()
+        return;
+    }
+
+    if (timeoutRef > -1) {
+        clearTimeout(timeoutRef);
+    }
+
+    openMenu()
+}
+
+function reInit () {
+    if (window.innerWidth > 786) {
+        expand = false;
+        ul.removeAttribute("class");
+        header.removeAttribute("style");
+    }
+    
+}
