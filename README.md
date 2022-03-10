@@ -5,12 +5,12 @@
 This project for learning purpose.
 
 FWD scholarship<br/>
-[![FWD logo](https://egfwd.com/wp-content/uploads/2021/10/logo-01.png "FWD logo")](https://egfwd.com/)
+[![FWD logo](/assets/fwd-egypt.jpg "fwd logo")](https://egfwd.com/)
 
 Udacity platform<br/>
-[![FWD logo](https://www.udacity.com/images/svgs/udacity-tt-logo.svg "FWD logo")](https://www.udacity.com/)
+[![Udacity logo](/assets/udacity.jpg "udacity logo")](https://www.udacity.com/)
 
-## Preview:
+### Preview:
 project link [landing page](https://landing-page-proj.netlify.app/)
 
 # Project's Behavior
