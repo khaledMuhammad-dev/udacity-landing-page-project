@@ -129,7 +129,7 @@
         const top = section.offsetTop;
 
         window.scrollTo({
-            top: top - activeOffset,
+            top: top - activeOffset + 2,
             left: 0,
             behavior: 'smooth',
         });
