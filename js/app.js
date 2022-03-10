@@ -3,14 +3,11 @@
 
 const log = console.log;
 
-
 const sections = document.querySelectorAll("section[data-nav]");
 const ul = document.querySelector("#navbar__list");
 
 appendNavSections()
 document.addEventListener("scroll", handleActiveSection);
-
-
 
 function appendNavSections() {
 
@@ -35,15 +32,12 @@ function appendNavSections() {
 }
 
 
-
  const lis = document.querySelectorAll("li");
 
  function handleActiveSection() {
      sections.forEach(( section, i ) => {
         const { top, bottom } = section.getBoundingClientRect();
         const isActive = section.classList.contains("active");
-        
-        
  
         if ( top <= 5 && bottom > 5 ) {
             if( !isActive ){
@@ -61,7 +55,6 @@ function appendNavSections() {
         }
     })
 }
-
 
 
 ul.addEventListener("click", (e) => {
@@ -84,8 +77,6 @@ ul.addEventListener("click", (e) => {
         left: 0,
         behavior: 'smooth',
     })
-
-
 })
 
 
